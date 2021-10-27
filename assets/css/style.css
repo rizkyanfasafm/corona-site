@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500;1,700&display=swap');
+
+#main{
+    background-color: #fff;
+    position: relative;
+}
+
+nav, #main-info{
+    z-index: 1;
+}
+
+.nav-link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: rgb(37, 37, 37) !important;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.nav-link.active{
+    color: #000 !important;
+    font-weight: 600;
+}
+
+#btn-download{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+#main-info{
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 1em;
+}
+
+#main-info .info{
+    padding-top: 5em;
+}
+
+#main-info h3{
+    font-weight: 700;
+    font-size: 3em;
+}
+
+#shape{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #EC5863;
+    height: 100%;
+    width: 20%;
+    border-radius: 30px 0 0 30px;
+}
+
+/* Responsive Breakpoint */
+@media only screen and (max-width:992px){
+    #btn-download{
+        width: 100%;
+    }
+
+    #main-info .info{
+        padding-top: 0;
+    }
+}
