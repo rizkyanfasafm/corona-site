@@ -1,67 +1,754 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,500;1,700&display=swap");
 
-#main{
-    background-color: #fff;
-    position: relative;
+#main {
+  background-color: #fafbfd;
+  position: relative;
 }
 
-nav, #main-info{
-    z-index: 1;
+nav,
+#main-info {
+  z-index: 1;
 }
 
-.nav-link{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: rgb(37, 37, 37) !important;
-    letter-spacing: 1px;
-    font-size: 14px;
+.nav-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(37, 37, 37) !important;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
-.nav-link.active{
-    color: #000 !important;
-    font-weight: 600;
+.nav-link.active {
+  color: #000 !important;
+  font-weight: 600;
 }
 
-#btn-download{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 12px;
+#btn-download {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  background-color: #4285f4;
 }
 
-#main-info{
-    position: relative;
-    font-family: 'Rubik', sans-serif;
-    padding-top: 1em;
+#btn-download:hover {
+  background-color: #417cdb;
 }
 
-#main-info .info{
-    padding-top: 5em;
+#main-info {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  padding-top: 1em;
 }
 
-#main-info h3{
-    font-weight: 700;
-    font-size: 3em;
+#main-info .info {
+  padding-top: 5em;
 }
 
-#shape{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #EC5863;
-    height: 100%;
-    width: 20%;
-    border-radius: 30px 0 0 30px;
+#main-info h3 {
+  font-weight: 700;
+  font-size: 3em;
 }
+
+#main-info p {
+  font-size: 0.9em;
+  color: #616161;
+}
+
+#main-info a {
+  width: 30%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: #ec5863;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+#main-info a:hover {
+  background-color: #ce2c37;
+}
+
+#main-info .info-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+
+#main-info #info-video-button {
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid #4285f4;
+}
+
+#main-info #btn-play {
+  margin-left: 0.6em;
+  line-height: 1.9em;
+  font-size: 1.2em;
+  color: #4285f4;
+}
+
+#main-info #info-video-text {
+  margin-left: 0.6em;
+  font-family: "Rubik", sans-serif;
+}
+
+#main-info #info-video-text p {
+  margin: 0;
+  padding: 0;
+}
+
+#main-info #info-safe {
+  color: #b0b0b0;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+#main-info #info-watch {
+  color: #000000;
+  font-size: 0.7rem;
+}
+
+#shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ec5863;
+  height: 100%;
+  width: 20%;
+  border-radius: 30px 0 0 30px;
+}
+
+/* Feature Section */
+#features {
+  padding-top: 5em;
+}
+
+#feature-image {
+  text-align: center;
+  position: relative;
+}
+
+#features #shape-top {
+  width: 8em;
+  height: 8em;
+  background-color: #ec5863;
+  border-radius: 30px;
+  position: absolute;
+  left: 7.5em;
+  top: -1em;
+  z-index: -1;
+}
+
+#features #shape-middle {
+  width: 6em;
+  height: 6em;
+  background-color: #ec5863;
+  border-radius: 30px;
+  position: absolute;
+  left: 27em;
+  top: 27em;
+  z-index: -1;
+}
+
+#features #shape-bottom {
+  width: 5em;
+  height: 5em;
+  background-color: #ec5863;
+  border-radius: 30px;
+  position: absolute;
+  left: 9em;
+  top: 37em;
+  z-index: -1;
+}
+
+#feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+}
+
+#feature-text h1 {
+  font-weight: 700;
+  width: 50%;
+}
+
+#feature-text p {
+  font-weight: 500;
+  color: #616161;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  width: 75%;
+}
+
+#feature-text-highlight {
+  color: #ec5863;
+}
+
+#feature-btn {
+  width: 30%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: #ec5863;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+#feature-btn:hover {
+  background-color: #ce2c37;
+}
+
+#talks {
+  padding: 4em 0;
+  background-color: #fafbfd;
+}
+
+#talk-statistics {
+  width: 40%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#talk-statistics__text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding: 1.5em 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 10;
+}
+
+#talk-statistics__shape__left {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  background-color: #ec5863;
+  border-radius: 16px;
+  left: -2em;
+  top: 6em;
+  transform: rotate(45deg);
+}
+
+#talk-statistics__shape__middle {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background-color: #ec5863;
+  border-radius: 16px;
+  left: 14em;
+  top: -1em;
+  z-index: 3;
+  transform: rotate(20deg);
+}
+
+#talk-statistics__shape__right {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  background-color: #ec5863;
+  border-radius: 16px;
+  right: -1em;
+  top: 4em;
+  z-index: 3;
+  transform: rotate(45deg);
+}
+
+#talk-statistics h3 {
+  color: #ec5863;
+  font-size: 3em;
+}
+
+#talk-statistics p {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+#talk{
+  margin-top: 6em;
+}
+
+#talk-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+}
+
+#talk-text h2{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#talk-text__highlight{
+  color: #587EEC;
+}
+
+#talk-text p{
+  font-weight: 500;
+  width: 70%;
+}
+
+#talk-text__button{
+  background-color: #EC5863;
+  width: 30%;
+}
+
+#talk-text__button:hover{
+  background-color: #ce2c37;
+}
+
+#healthcare{
+  margin-top: 3em;
+  font-family: "Rubik", sans-serif;
+}
+
+#healthcare-focus{
+  text-align: center;
+}
+
+#healtcare-focus__highlight{
+  color: #EC5863;
+}
+
+#healthcare-focus h1{
+  font-weight: 700;
+  font-size: 3em;
+}
+
+#healthcare-focus p{
+  width: 50%;
+  margin: 0 auto;
+  color: #616161;
+}
+
+#healthcare-info{
+  margin-top: 3em;
+  position: relative;
+}
+
+#healthcare-info .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 20em;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 0 1em;
+}
+
+#healthcare-info__shape__left, #healthcare-info__shape__middle__top, #healthcare-info__shape__middle__bottom, #healthcare-info__shape__right{
+  background-color: #EC5863;
+  position: absolute;
+  border-radius: 16px;
+  z-index: -2;
+}
+
+#healthcare-info__shape__left{
+  width: 6em;
+  height: 6em;
+  bottom: 0;
+  transform: rotate(45deg);
+  left: 4em;
+}
+
+#healthcare-info__shape__middle__top{
+  width: 6em;
+  height: 6em;
+  top: 0;
+  transform: rotate(20deg);
+  left: 20em;
+}
+
+#healthcare-info__shape__middle__bottom{
+  width: 10em;
+  height: 10em;
+  bottom: 0;
+  transform: rotate(20deg);
+  left: 46em;
+}
+
+#healthcare-info__shape__right{
+  width: 4em;
+  height: 4em;
+  top: 0;
+  transform: rotate(20deg);
+  left: 73em;
+}
+
+#healthcare-info img{
+  width: 30%;
+}
+
+#healthcare-info h4{
+  font-weight: 700;
+}
+
+#healthcare-info p{
+  color: #616161;
+  font-size: .9em;
+}
+
+footer{
+  margin: 3em 0;
+}
+
+#find-me img{
+  width: 15%;
+}
+
 
 /* Responsive Breakpoint */
-@media only screen and (max-width:992px){
-    #btn-download{
-        width: 100%;
-    }
+@media only screen and (max-width: 1400px) {
+  #features #shape-top {
+    width: 8em;
+    height: 8em;
+    left: 6.5em;
+    top: -1em;
+  }
 
-    #main-info .info{
-        padding-top: 0;
-    }
+  #features #shape-middle {
+    width: 5em;
+    height: 5em;
+    left: 23em;
+    top: 23em;
+  }
+
+  #features #shape-bottom {
+    width: 5em;
+    height: 5em;
+    left: 7.5em;
+    top: 31em;
+  }
+
+  #talk-statistics__shape__left {
+    width: 4em;
+    height: 4em;
+    left: -2em;
+    top: 6em;
+  }
+  
+  #talk-statistics__shape__middle {
+    width: 5em;
+    height: 5em;
+    left: 12em;
+    top: -1em;
+  }
+  
+  #talk-statistics__shape__right {
+    width: 6em;
+    height: 6em;
+    right: -1em;
+    top: 4em;
+  }
+
+  #healthcare-info__shape__left{
+    left: 3em;
+  }
+  
+  #healthcare-info__shape__middle__top{
+    left: 17em;
+  }
+  
+  #healthcare-info__shape__middle__bottom{
+    left: 40em;
+  }
+  
+  #healthcare-info__shape__right{
+    left: 63em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #features #shape-top {
+    width: 6em;
+    height: 6em;
+    left: 6em;
+    top: 0;
+  }
+
+  #features #shape-middle {
+    width: 4em;
+    height: 4em;
+    left: 19.5em;
+    top: 19.5em;
+  }
+
+  #features #shape-bottom {
+    width: 4em;
+    height: 4em;
+    left: 6.5em;
+    top: 26em;
+  }
+
+  #talk-statistics__shape__left {
+    width: 4em;
+    height: 4em;
+    left: -2em;
+    top: 5em;
+  }
+  
+  #talk-statistics__shape__middle {
+    width: 5em;
+    height: 5em;
+    left: 9em;
+    top: -1em;
+  }
+  
+  #talk-statistics__shape__right {
+    width: 6em;
+    height: 6em;
+    right: -3em;
+    top: 3em;
+  }
+
+  #talk-statistics h3 {
+    font-size: 2em;
+  }
+  
+  #talk-statistics p {
+    font-size: .9em;
+  }
+
+  #find-me img{
+    width: 20%;
+  }
+
+  #healthcare-info__shape__left{
+    width: 4em;
+    height: 4em;
+    left: 2em;
+  }
+  
+  #healthcare-info__shape__middle__top{
+    left: 15em;
+  }
+  
+  #healthcare-info__shape__middle__bottom{
+    width:7em;
+    height: 7em;
+    left: 34em;
+  }
+  
+  #healthcare-info__shape__right{
+    left: 53em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  #btn-download {
+    width: 100%;
+  }
+
+  #main-info .info {
+    padding-top: 0;
+  }
+
+  #shape {
+    display: none;
+  }
+
+  #main-info .info {
+    text-align: center;
+  }
+
+  #main-info a {
+    width: 100%;
+  }
+
+  .illustration {
+    margin-top: 2em;
+  }
+
+  #main-info .info-video {
+    margin: 3em 3.2em;
+    padding-bottom: 0;
+  }
+
+  #main-info #info-video-text p {
+    text-align: center;
+  }
+
+  #features {
+    padding-top: 1em;
+  }
+
+  #feature-image {
+    padding-bottom: 1em;
+  }
+
+  #features #shape-top {
+    width: 6em;
+    height: 6em;
+    left: 10em;
+    top: 0;
+  }
+
+  #features #shape-middle {
+    width: 6em;
+    height: 6em;
+    left: 29em;
+    top: 30em;
+  }
+
+  #features #shape-bottom {
+    width: 5em;
+    height: 5em;
+    left: 10em;
+    top: 40em;
+  }
+
+  #feature-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  #feature-text h1 {
+    width: 100%;
+  }
+
+  #feature-btn {
+    width: 70%;
+  }
+
+  #talk-statistics__shape__left {
+    display: none;
+  }
+  
+  #talk-statistics__shape__middle {
+    display: none;
+  }
+  
+  #talk-statistics__shape__right {
+    display: none;
+  }
+
+  #talk-statistics {
+    width: 70%;
+  }
+
+  #talk {
+    text-align: center;
+  }
+
+  #talk-text p{
+    width: 100%;
+  }
+
+  #talk-text__button{
+    width: 100%;
+  }
+
+  #healthcare-focus h1{
+    font-size: 2em;
+  }
+  
+  #healthcare-focus p{
+    width: 100%;
+  }
+
+  #healthcare-info__icon .card{
+    margin-top: 3em;
+  }
+  
+  #healthcare-info__shape__left{
+    display: none;
+  }
+  
+  #healthcare-info__shape__middle__top{
+    display: none;
+  }
+  
+  #healthcare-info__shape__middle__bottom{
+    display: none;
+  }
+  
+  #healthcare-info__shape__right{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #features #shape-top {
+    width: 5em;
+    height: 5em;
+    left: 7em;
+    top: 0;
+  }
+
+  #features #shape-middle {
+    width: 4em;
+    height: 4em;
+    left: 22em;
+    top: 22em;
+  }
+
+  #features #shape-bottom {
+    width: 4em;
+    height: 4em;
+    left: 7.5em;
+    top: 29.5em;
+  }
+
+  #feature-text{
+    padding-bottom: 3em;
+  }
+  #talk-statistics {
+    width: 30%;
+  }
+  #talk-statistics__text{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20em;
+  }
+
+  #find-me img{
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #features #shape-top {
+    width: 3em;
+    height: 3em;
+    left: 5.5em;
+    top: 0;
+  }
+
+  #features #shape-middle {
+    width: 3em;
+    height: 3em;
+    left: 15em;
+    top: 15em;
+  }
+
+  #features #shape-bottom {
+    width: 3em;
+    height: 3em;
+    left: 5.5em;
+    top: 20em;
+  }
+
+  #talk-statistics {
+    width: 70%;
+  }
+
+  #find-me img{
+    width: 30%;
+  }
 }

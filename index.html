@@ -8,6 +8,7 @@
     <title>Corona Site</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -18,11 +19,10 @@
         <nav class="navbar navbar-expand-lg navbar-light p-4">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/image/logo.png" alt="Logo">
+                    <img src="./assets/image/logo.svg" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbar-collapse">
@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#">SUPPORT</a>
                         <a class="nav-link" href="#">CONTACT US</a>
                     </div>
-                    <a class="btn btn-primary" id="btn-download">DOWNLOAD</a>
+                    <a class="btn text-white" id="btn-download">DOWNLOAD</a>
                 </div>
             </div>
         </nav>
@@ -40,15 +40,28 @@
         <!-- main info -->
         <div id="main-info">
             <div class="container p-3">
-                <div class="row">
-                    <div class="col info">
-                        <h3>Take care of yours family’s health.</h3>
-                        <span>All in one destination for COVID-19 health queries. Consult 10,000+ health workers about
-                            your concerns.</span>
-                        <a href="#" class="btn btn-danger">GET STARTED</a>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 info">
+                        <h3>Take care of yours family’s <span style="color: #4285F4;">health.</span></h3>
+                        <p>All in one destination for COVID-19 health queries. <br> Consult 10,000+ health workers about
+                            your concerns.</p>
+                        <a href="#" class="btn text-white mt-2">GET STARTED</a>
                     </div>
-                    <div class="col">
-                        <img src="./assets/image/main-docter.png" alt="Docter">
+                    <div class="col-lg-6 illustration text-center">
+                        <img src="./assets/image/main-docter.png" alt="Docter" width="90%">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="info-video">
+                            <div id="info-video-button" class="rounded-circle">
+                                <i id="btn-play" class="fas fa-play"></i>
+                            </div>
+                            <div id="info-video-text">
+                                <p id="info-safe">Stay safe with GoCorona</p>
+                                <p id="info-watch">WATCH VIDEO</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,6 +69,127 @@
 
         <div id="shape"></div>
     </div>
+
+    <div id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" id="feature-image">
+                    <div id="shape-top"></div>
+                    <img src="./assets/image/feature.png" alt="Feature Image" width="60%">
+                    <div id="shape-middle"></div>
+                    <div id="shape-bottom"></div>
+                </div>
+                <div class="col-lg-6" id="feature-text">
+                    <h1>Stay safe with Go<span id="feature-text-highlight">Corona.</span></h1>
+                    <p>24x7 Support and user friendly mobile platform to bring healthcare to your fingertips. Signup and
+                        be a part of the new health culture.</p>
+                    <a href="#" class="btn text-white" id="feature-btn">FEATURES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="talks">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="talk-statistics">
+                    <div id="talk-statistics__text">
+                        <div id="users">
+                            <h3>2m</h3>
+                            <p>USERS</p>
+                        </div>
+                        <div id="countries">
+                            <h3>78</h3>
+                            <p>COUNTRIES</p>
+                        </div>
+                        <div id="medical-experts">
+                            <h3>10,000+</h3>
+                            <p>MEDICAL EXPERTS</p>
+                        </div>
+                    </div>
+                    <div id="talk-statistics__shape__left"></div>
+                    <div id="talk-statistics__shape__middle"></div>
+                    <div id="talk-statistics__shape__right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="talk">
+            <div class="row mt-4">
+                <div class="col-lg-6" id="talk-text">
+                    <h2>Talk to <span id="talk-text__highlight">experts.</span></h2>
+                    <p>Book appointments or submit queries into thousands of forums concerning health issues and prevention against noval Corona Virus.</p>
+                    <a href="#" class="btn text-white" id="talk-text__button">FEATURES</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/image/talk-image.png" width="90%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="healthcare">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="healthcare-focus">
+                    <h1><span id="healtcare-focus__highlight">Healthcare</span> at your Fingertips.</h1>
+                    <p>Bringing premium healthcare features to your fingertips. User friendly mobile platform to bring healthcare to your fingertips. Signup and be a part of the new health culture.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="healthcare-info">
+                        <div id="healthcare-info__icon">
+                            <div class="row justify-content-lg-evenly">
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img src="./assets/image/icon-person.png" alt="">
+                                        <div class="healthcare-info__text">
+                                            <h4>Symptom Checker</h4>
+                                            <p>Check if you are infected by COVID-19 with our Symptom Checker</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img src="./assets/image/icon-nurse.png" alt="">
+                                        <div class="healthcare-info__text">
+                                            <h4>24x7 Medical support</h4>
+                                            <p>Consult with 10,000+ health workers about your concerns.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card">
+                                        <img src="./assets/image/icon-heart.png" alt="">
+                                        <div class="healthcare-info__text">
+                                            <h4>Conditions</h4>
+                                            <p>Bringing premium healthcare features to your fingertips.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="healthcare-info__shape__left"></div>
+                        <div id="healthcare-info__shape__middle__top"></div>
+                        <div id="healthcare-info__shape__middle__bottom"></div>
+                        <div id="healthcare-info__shape__right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="find-me" class="text-center">
+                        <img src="./assets/image/play-store.png">
+                        <img src="./assets/image/apple-store.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
